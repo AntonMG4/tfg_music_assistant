@@ -6,13 +6,18 @@
 >
 > **Autor:** Antón Maestre Gómez | **Tutor:** Jacinto Mata Vázquez
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Transformers-yellow)](https://huggingface.co/)
-[![Colab](https://img.shields.io/badge/Google-Colab-orange?logo=googlecolab)](https://colab.research.google.com/)
-[![Framework](https://img.shields.io/badge/DialogueKit-Flask-green)](https://github.com/iai-group/DialogueKit)
-[![Frontend](https://img.shields.io/badge/React-TypeScript-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-([https://img.shields.io/badge/PEFT-LoRA-red](https://img.shields.io/badge/PEFT-LoRA-red))]([https://huggingface.co/docs/peft/index](https://huggingface.co/docs/peft/index))
-[![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)]([https://opensource.org/licenses/Apache-2.0](https://opensource.org/licenses/Apache-2.0))
+[![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![TypeScript](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+
+[![Hugging Face](https://img.shields.io/badge/HUGGING_FACE-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/)
+[![Google Colab](https://img.shields.io/badge/GOOGLE_COLAB-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
+[![PEFT LoRA](https://img.shields.io/badge/PEFT_/_LoRA-D00000?style=for-the-badge)](https://huggingface.co/docs/peft/index)
+
+[![Flask](https://img.shields.io/badge/FLASK-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![DialogueKit](https://img.shields.io/badge/DIALOGUE_KIT-1155cc?style=for-the-badge)](https://github.com/iai-group/DialogueKit)
+
+[![License](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 ## 📄 Descripción del Proyecto
 
@@ -59,28 +64,22 @@ Ambos modelos alcanzaron una **Exactitud (Accuracy) del 86.3%** en el conjunto d
 
 ```text
 tfg_music_assistant
-├── chatwidget/                   # 🎨 FRONTEND (React & TypeScript)
-│   ├── src/                      # Componentes del chat y lógica de UI
-│   ├── public/                   # Assets estáticos
-│   ├── package.json              # Dependencias de Node.js
-│   ├── music_recommender.py      # 🤖 BACKEND (Orquestador DialogueKit)
-│   └── chatwidget.md             # Documentación específica del widget
+├── chatwidget/                   # FRONTEND AND DIALOG LOGIC
+│   ├── music_recommender.py          # Main script (Chatbot orchestrator with DialogueKit)
+│   └── chatwidget.md                 # Enlace al código fuente del chatwidget
 │
-├── colab_notebooks/              # 📓 ENTRENAMIENTO E INFERENCIA
-│   ├── data/                     # Dataset (train.csv, test.csv, eval.csv)
-│   ├── ft_falcon_model/          # Checkpoints y logs de Falcon
-│   ├── ft_llama_model/           # Checkpoints y logs de LLaMA
-│   ├── apiFalcon.ipynb           # 🚀 Script de despliegue API (Falcon)
-│   ├── apiLlama.ipynb            # 🚀 Script de despliegue API (LLaMA)
-│   ├── Finetuning_Falcon.ipynb   # Entrenamiento LoRA + Optuna
-│   ├── Finetuning_LLaMa.ipynb    # Entrenamiento LoRA + Optuna
-│   ├── MergeModels.ipynb         # Fusión de pesos (Base + LoRA)
-│   └── EvalLossPlot.ipynb        # Gráficas de pérdidas (TensorBoard)
+├── colab_notebooks/              # ENTRENAMIENTO E INFERENCIA
+│   ├── data/                         # Dataset (train.csv, test.csv, eval.csv)
+│   ├── ft_*_model/                   # Results and final models
+│   ├── api*.ipynb                    # Scripts de despliegues API 
+│   ├── Finetuning_*.ipynb            # Training notebooks with LoRA and Optuna
+│   ├── MergeModels.ipynb             # Script to merge LoRA weights with base model
+│   └── EvalLossPlot.ipynb            # Loss plots (TensorBoard)
 │
-└── docs/                         # 📚 DOCUMENTACIÓN
-    ├── memoria.pdf               # Memoria completa del TFG
-    ├── PresentacionTFG.pdf       # Diapositivas de defensa
-    └── PruebaChat.mp4            # Video demostrativo
+└── docs/                         # ACADEMIC DOCUMENTATION
+    ├── memoria.pdf                   # Full Thesis Report (PDF)
+    ├── PresentacionTFG.pdf           # Defense Presentation Slides
+    └── PruebaChat.mp4                # Demo video
 ```
 ---
 

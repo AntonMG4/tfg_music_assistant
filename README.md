@@ -45,7 +45,7 @@ Para este trabajo se han comparado, optimizado y desplegado dos arquitecturas de
 *   **Hiperparámetros:** Ajustados mediante Optimización Bayesiana con **Optuna**.
 
 ### 📊 Resultados
-Ambos modelos alcanzaron una **Exactitud (Accuracy) del 86.3%** en el conjunto de test, superando ampliamente a los *baselines* zero-shot (69-75%).
+Ambos modelos alcanzaron una **Exactitud (Accuracy) del 86.3%** en el conjunto de test, superando ampliamente a los *baselines* zero-shot.
 
 | Métrica | LLaMA-1B (Tuned) | Falcon-7B (Tuned) |
 | :--- | :--- | :--- |

@@ -1,0 +1,2 @@
+model,epochs,accuracy,precision_clear,recall_clear,f1_score_clear,support_clear,precision_view,recall_view,f1_score_view,support_view,precision_remove,recall_remove,f1_score_remove,support_remove,precision_add,recall_add,f1_score_add,support_add,matriz_path
+tiiuae/falcon-7b,32,0.95,1.0,0.9032258064516129,0.9491525423728814,62.0,1.0,0.9078947368421053,0.9517241379310345,76.0,0.9104477611940298,1.0,0.953125,61.0,0.8970588235294118,1.0,0.9457364341085271,61.0,/content/drive/MyDrive/Colab Notebooks/matrices/matriz_1_prompt0_PreprocesadoES.jpeg

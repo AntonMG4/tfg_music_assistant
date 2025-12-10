@@ -89,7 +89,7 @@ tfg_music_assistant
 *   **Backend:** Flask, DialogueKit (IAI Group).
 *   **Frontend:** React, WebSockets.
 *   **Database:** SQLite (1M+ song catalog).
-*   **Infrastructure:** Google Colab (GPU T4), Localtunnel.
+*   **Infrastructure:** Google Colab (GPU T4), Visual Studio, Localtunnel.
 
 ---
 

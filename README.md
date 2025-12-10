@@ -32,44 +32,6 @@ The model classifies each user interaction into one of four supported intents:
 
 Once it identifies the intent, it acts upon the music database and provides a response to the user.
 
-```mermaid
-flowchart TD
-    %% Nodos externos
-    UserReq[User Request]:::textOnly --> UI
-    UI --> ChatResp[ChatBot Response]:::textOnly
-
-    %% Subgrafo DialogueKit (Caja Azul)
-    subgraph DialogueKit
-        direction TB
-        UI[User Interface]:::greenBox
-        Flask[Flask Server]:::greenBox
-        Local[Local Program]:::greenBox
-        
-        UI <--> Flask
-        Flask <--> Local
-    end
-
-    %% Subgrafo API (Caja Roja)
-    subgraph APITunnel ["API – Local Tunnel"]
-        Models[Trained Models]:::greenBox
-    end
-
-    %% Base de Datos
-    DB[Database]:::greenBox
-
-    %% Conexiones
-    Local <-->|Predicted Intent| Models
-    Local <-->|SQL Instruction| DB
-
-    %% Definicion de Estilos
-    classDef greenBox fill:#95d668,stroke:#333,stroke-width:1px,color:black;
-    classDef textOnly fill:none,stroke:none,color:black,font-weight:bold;
-    
-    %% Estilos de las cajas discontinuas
-    style DialogueKit fill:none,stroke:#007bff,stroke-width:2px,stroke-dasharray: 5 5
-    style APITunnel fill:none,stroke:#ff0000,stroke-width:2px,stroke-dasharray: 5 5
-```
-
 ---
 
 ## 🧠 Models and Methodology

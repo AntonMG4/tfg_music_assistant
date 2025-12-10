@@ -93,7 +93,7 @@ tfg_music_assistant
 
 ---
 
-## 📝 Referencias
+## 📝 References
 This work is based on research into generative models and their application in NLP. For more technical details, please refer to the `/docs` folder.
 
 *   *Maestre Gómez, A. (2025). Desarrollo de un Sistema Asistente de Música Basado en Aprendizaje Automático.* Universidad de Huelva.

@@ -57,9 +57,8 @@ Ambos modelos alcanzaron una **Exactitud (Accuracy) del 86.3%** en el conjunto d
 
 ## 📂 Estructura del Repositorio
 
-El proyecto se divide en tres módulos principales: **Entrenamiento** (Notebooks), **Backend** (Lógica del Agente) y **Frontend** (Interfaz Web).
-
-.
+```text
+tfg_music_assistant
 ├── chatwidget/                   # 🎨 FRONTEND (React & TypeScript)
 │   ├── src/                      # Componentes del chat y lógica de UI
 │   ├── public/                   # Assets estáticos
@@ -82,7 +81,7 @@ El proyecto se divide en tres módulos principales: **Entrenamiento** (Notebooks
     ├── memoria.pdf               # Memoria completa del TFG
     ├── PresentacionTFG.pdf       # Diapositivas de defensa
     └── PruebaChat.mp4            # Video demostrativo
-
+```
 ---
 
 ## 🛠️ Stack Tecnológico

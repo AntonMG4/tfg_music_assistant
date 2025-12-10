@@ -9,14 +9,11 @@
 [![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![TypeScript](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-
 [![Hugging Face](https://img.shields.io/badge/HUGGING_FACE-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/)
 [![Google Colab](https://img.shields.io/badge/GOOGLE_COLAB-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
 [![PEFT LoRA](https://img.shields.io/badge/PEFT_/_LoRA-D00000?style=for-the-badge)](https://huggingface.co/docs/peft/index)
-
 [![Flask](https://img.shields.io/badge/FLASK-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![DialogueKit](https://img.shields.io/badge/DIALOGUE_KIT-1155cc?style=for-the-badge)](https://github.com/iai-group/DialogueKit)
-
 [![License](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 ## 📄 Descripción del Proyecto

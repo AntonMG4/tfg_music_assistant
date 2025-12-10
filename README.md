@@ -43,12 +43,12 @@ For this work, two *State-of-the-Art* architectures were compared, optimized, an
 | **LLaMA-3.2-1B-Instruct** | 1.2B | Meta | Lightweight model optimized for instruction following. |
 | **Falcon-7B** | 7B | TII | Model trained on the massive RefinedWeb corpus. |
 
-### 🔬 Training and Optimization
+### Training and Optimization
 *   **Dataset:** 1600 synthetic phrases generated with ChatGPT, perfectly balanced across the 4 classes (400 examples/class).
 *   **Fine-Tuning:** **LoRA (Low-Rank Adaptation)** was used to retrain the models on Google Colab T4 GPUs, drastically reducing VRAM consumption.
 *   **Hyperparameters:** Tuned via Bayesian Optimization using **Optuna**.
 
-### 📊 Results
+### Results
 Both models achieved an **Accuracy of 86.3%** on the test set, significantly outperforming zero-shot baselines.
 
 | Metric | LLaMA-1B (Tuned) | Falcon-7B (Tuned) |

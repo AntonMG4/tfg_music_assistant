@@ -30,27 +30,6 @@ class MusicRecommenderAgent(Agent):
         self.suggest_add_song_count = 0
         self.num_user_msg = 0
 
-        # self.model_path = "data/finetuned_bert"
-        # self.model = BertForSequenceClassification.from_pretrained(self.model_path)
-        # self.tokenizer = BertTokenizer.from_pretrained(self.model_path)
-
-        # Nueva configuración para LLaMA
-        # self.model_path = "data/llama-1b_prompt0_60_PreprocesadoES"
-        # self.base_model_id = "meta-llama/Llama-3.2-1B-Instruct"
-
-        # Token de Hugging Face
-        # hf_token = "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"
-        # login(hf_token)
-        
-        # Cargar tokenizer desde el adaptador (como ya vimos que tienes los archivos)
-        # self.tokenizer = AutoTokenizer.from_pretrained(self.model_path, trust_remote_code=True)
-
-        # Cargar modelo base
-        # base_model = AutoModelForCausalLM.from_pretrained(self.base_model_id, trust_remote_code=True)
-
-        # Aplicar el adaptador (LoRA, PEFT)
-        # self.model = PeftModel.from_pretrained(base_model, self.model_path)
-
         # Create a dictionary to track which features the user has used
         self.used_features = {
             "song_added": False,

@@ -28,7 +28,7 @@ The model classifies each user interaction into one of four supported intents:
 *   **View:** Check the current state of the playlist.
 *   **Clear:** Empty the entire list at once.
 
-Una vez conoce la intención, actúa sobre la base de datos musical y proporciona una respuesta al usuario.
+Once it identifies the intent, it acts upon the music database and provides a response to the user.
 
 ---
 

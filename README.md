@@ -85,43 +85,6 @@ El proyecto se divide en tres módulos principales: **Entrenamiento** (Notebooks
 
 ---
 
-## 🚀 Guía de Instalación y Despliegue
-
-Debido a que los modelos LLM requieren GPU, el sistema utiliza una **arquitectura híbrida**: el modelo corre en la nube (Colab) y la aplicación en local.
-
-### Paso 1: Desplegar la API de Inferencia (Nube)
-1.  Abre `colab_notebooks/apiLlama.ipynb` (o Falcon) en Google Colab.
-2.  Asegúrate de seleccionar un entorno de ejecución con **GPU (T4)**.
-3.  Ejecuta todas las celdas. Esto instalará las librerías necesarias y levantará un servidor Flask con **Localtunnel**.
-4.  Copia la URL pública generada al final (ej: `https://dark-pugs-sing.loca.lt`).
-
-### Paso 2: Configurar el Backend (Local)
-1.  Navega a la carpeta `chatwidget/`.
-2.  Instala las dependencias de Python:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Nota: Asegúrate de tener las librerías de `DialogueKit`, `Flask` y `sqlite3` instaladas).*
-3.  Abre `music_recommender.py` y actualiza la variable `API_URL` con el enlace obtenido en el Paso 1.
-4.  Inicia el agente conversacional:
-    ```bash
-    python music_recommender.py
-    ```
-
-### Paso 3: Iniciar el Frontend (Local)
-1.  En una nueva terminal, navega a la carpeta `chatwidget/`.
-2.  Instala las dependencias de Node.js:
-    ```bash
-    npm install
-    ```
-3.  Lanza el servidor de desarrollo:
-    ```bash
-    npm start
-    ```
-4.  Abre tu navegador en `http://localhost:3000`. ¡El asistente está listo! 🎧
-
----
-
 ## 🛠️ Stack Tecnológico
 
 *   **Lenguajes:** Python 3.10+, TypeScript.

@@ -15,13 +15,13 @@
 [![DialogueKit](https://img.shields.io/badge/DIALOGUE_KIT-1155cc?style=for-the-badge)](https://github.com/iai-group/DialogueKit)
 [![License](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-![Gameplay Screenshot](docs/images/main_examples.png)
-
 ## 📄 Project Description
 
 This project presents the development of a conversational music assistant capable of interpreting natural language requests and managing a playlist in real-time.
 
 Unlike traditional assistants based on rigid commands, this system uses **Generative Language Models (LLMs)** adjusted via *Fine-Tuning* techniques to classify user intent. The system acts as an intelligent orchestrator that translates natural language into SQL operations on a music database.
+
+![Gameplay Screenshot](docs/images/main_examples.png)
 
 ### Key Features
 The model classifies each user interaction into one of four supported intents:

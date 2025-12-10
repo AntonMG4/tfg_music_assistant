@@ -36,34 +36,27 @@ flowchart TD
     %% Estilos de los nodos (Cajas verdes)
     classDef greenBox fill:#95d668,stroke:#333,stroke-width:1px,color:black;
     classDef textOnly fill:none,stroke:none,color:black,font-weight:bold;
-
     %% Nodos externos (Entrada/Salida)
     UserReq[User Request]:::textOnly --> UI
     UI --> ChatResp[ChatBot Response]:::textOnly
-
     %% Subgrafo DialogueKit (Caja Azul Discontinua)
     subgraph DialogueKit
         direction TB
         UI[User Interface]:::greenBox
         Flask[Flask Server]:::greenBox
-        Local[Local Program]:::greenBox
-        
+        Local[Local Program]:::greenBox  
         UI <--> Flask
         Flask <--> Local
     end
-
     %% Subgrafo API (Caja Roja Discontinua)
     subgraph APITunnel ["API – Local Tunnel"]
         Models[Trained Models]:::greenBox
     end
-
     %% Base de Datos
     DB[Database]:::greenBox
-
     %% Conexiones entre bloques
     Local <-->|Predicted Intent| Models
     Local <-->|SQL Instruction| DB
-
     %% Estilos de los contenedores (Subgrafos)
     style DialogueKit fill:none,stroke:#007bff,stroke-width:2px,stroke-dasharray: 5 5
     style APITunnel fill:none,stroke:#ff0000,stroke-width:2px,stroke-dasharray: 5 5
